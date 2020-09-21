@@ -6,6 +6,7 @@ ion-card {
     text-align: center;
     color: blue;
     width: 400px;
+    
   }
   ion-item{
     align-content: center;
@@ -17,5 +18,9 @@ ion-card {
     }
     placeholder{
       opacity: .5s;
+    }
+    ion-content{
+       align-content: center;
+
     }
     
