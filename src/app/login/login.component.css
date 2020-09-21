@@ -33,8 +33,10 @@
        align-content: center;
     }*/
     ion-content{
-    left: 150px;
+    /*left: 150px;*/
     width: 100% auto !important;
+    color: gray;
+
   }
   ion-item{
         padding: 3px;
