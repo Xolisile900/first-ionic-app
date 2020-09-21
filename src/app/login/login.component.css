@@ -1,0 +1,21 @@
+.log{
+  background: gray;
+}
+ion-card {
+    position: relative;
+    text-align: center;
+    color: blue;
+    width: 400px;
+  }
+  ion-item{
+    align-content: center;
+   
+  }
+   ion-input{
+      align-content: center;
+      opacity: .5;
+    }
+    placeholder{
+      opacity: .5s;
+    }
+    
