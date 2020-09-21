@@ -7,6 +7,23 @@ ion-card {
   ion-input{
     text-align: center;
   }
-  ion-content{
-    left: 150px;
+ 
+  ion-item{
+        padding: 3px;
+        margin-top: 10px !important;        
+              
+    }  
+    ion-button {
+        height: 45px;
+        margin-top: 10px !important;
+    }
+    ion-card{
+    position: relative;
+    margin-bottom: 20px;
+    width:auto;
+    margin:auto;
+    height: 200px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
   }
