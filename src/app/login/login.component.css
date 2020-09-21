@@ -21,6 +21,7 @@ ion-card {
     }
     ion-content{
        align-content: center;
-
     }
-    
+    ion-content{
+    left: 150px;
+  }

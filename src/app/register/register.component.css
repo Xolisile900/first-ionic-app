@@ -4,3 +4,9 @@ ion-card {
     color: blue;
     width: 400px;
   }
+  ion-input{
+    text-align: center;
+  }
+  ion-content{
+    left: 150px;
+  }

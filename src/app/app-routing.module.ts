@@ -7,6 +7,7 @@ import { ResetpasswordComponent } from './resetpassword/resetpassword.component'
 const routes: Routes = [
   { path: 'tabs', loadChildren: './tabs/tabs.module#TabsPageModule' },
   { path: '', component: LoginComponent},
+  { path: 'login', component: LoginComponent},
   { path: 'register', component: RegisterComponent},
   { path: 'resetpassword', component: ResetpasswordComponent}
 ];
