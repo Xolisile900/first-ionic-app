@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar color="secondary">
+    <ion-title>
+      To-Do List
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+      <ion-input 
+       type="text" #myInput name="inputValue"
+        [(ngModel)]="inputValue" placeholder="Enter Item"></ion-input>
+      <ion-button (click)="addClickedbtn()" (click)="addToList()" (click)="inputList()"><ion-icon name="add"></ion-icon></ion-button>
+    </ion-item>     
+
+<ion-item *ngIf="addClicked">
+      <ion-icon name="key"></ion-icon>
+      <ion-input>inputValue</ion-input>
+    </ion-item>
+  <ion-content padding *ngIf="addClicked"><!--- *ngIf="addClicked">   --->
+  <ion-content *ngFor="let list of todoArr">
+    <ion-item >
+        <ion-label>{{list.contentValue}}
+          <ion-button><ion-icon name="create"></ion-icon>
+          </ion-button>
+           <ion-button><ion-icon name="trash"></ion-icon>
+           </ion-button>
+        </ion-label> 
+      </ion-item>
+   </ion-content>
+   </ion-content>
+
+</ion-content>
+
+        
