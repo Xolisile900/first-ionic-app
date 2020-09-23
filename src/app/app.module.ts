@@ -11,10 +11,10 @@ import { RegisterComponent } from './register/register.component';
 import { ResetpasswordComponent } from './resetpassword/resetpassword.component';
 import { TodoComponent } from './todo/todo.component';
 import { UpdateComponent } from './update/update.component';
-import { DeleteitemComponent } from './deleteitem/deleteitem.component';
+
 
 @NgModule({
-  declarations: [AppComponent, LoginComponent, RegisterComponent, ResetpasswordComponent, TodoComponent, UpdateComponent, DeleteitemComponent],
+  declarations: [AppComponent, LoginComponent, RegisterComponent, ResetpasswordComponent, TodoComponent, UpdateComponent ],
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
   providers: [
