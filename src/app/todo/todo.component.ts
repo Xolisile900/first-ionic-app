@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { UpdateComponent } from '../update/update.component';
+//import { NavController } from 'ionic-angular';
 
 @Component({
   selector: 'app-todo',
@@ -9,6 +10,7 @@ import { UpdateComponent } from '../update/update.component';
 export class TodoComponent implements OnInit {
 
   constructor() { }
+ // constructor(public navCtrl: NavController) {}
 
   contentValue: string="";
   status: string;
@@ -23,7 +25,7 @@ export class TodoComponent implements OnInit {
 
 addTask() {
 
-  if (this.listName.length > 0) {
+  //if (this.listName.length > 0) {
      let task = this.listName;
      this.arrayList.push(task);
      console.log(this.listName);
@@ -33,7 +35,7 @@ addTask() {
    //  ];
 
      this.listName = '';
-   }
+  // }
 }
 
 deleteTask(index) {
