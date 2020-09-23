@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { UpdateComponent } from '../update/update.component';
 //import { NavController } from 'ionic-angular';
+import { AlertController } from 'ionic-angular';
 
 @Component({
   selector: 'app-todo',
@@ -9,7 +10,7 @@ import { UpdateComponent } from '../update/update.component';
 })
 export class TodoComponent implements OnInit {
 
-  constructor() { }
+  constructor(private alertCtrl: AlertController) { }
  // constructor(public navCtrl: NavController) {}
 
   contentValue: string="";
@@ -77,11 +78,41 @@ deleteTask(index) {
       //this.lableText = this.inputValue;
     //}
 
-  addClickedbtn() {
+ 
+
+  presentPrompt(index) {
+    let names = this.arrayList
+  let alert = this.alertCtrl.create({
+    title: 'update',
+    inputs: [
+      {
+        //name: names,
+        placeholder: 'names',
+        type: "text"
+      }
+    ],
+    buttons: [
+      {
+        text: 'ok',
+        handler: data => {
+          alert(data)
+        }
+      },
+      {
+        text: 'Cancel',
+        role: 'cancel',
+        handler: data => {
+          console.log('Cancel clicked');
+        }
+      }
+    ]
+  });
+  alert.present();
+}
+
+ addClickedbtn() {
     this.addClicked = !this.addClicked;
   }
-
-  
 
   ngOnInit() {
 //this.taskName = this.id;
