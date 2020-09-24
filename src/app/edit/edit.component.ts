@@ -19,6 +19,7 @@ export class EditComponent implements OnInit {
     // console.log(this.listName);
      //this.listName = '';
      todo.listName = this.list;
+     
      this.list = '';
   }
 

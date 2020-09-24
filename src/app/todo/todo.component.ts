@@ -30,7 +30,7 @@ export class TodoComponent implements OnInit {
 
 addTask() {
 
-  //if (this.listName.length > 0) {
+  if (this.listName.length > 0) {
      let task = this.listName;
      this.arrayList.push(task);
      console.log(this.listName);
@@ -40,7 +40,7 @@ addTask() {
    //  ];
 
      this.listName = '';
-  // }
+   }
 }
 
 deleteTask(index) {
