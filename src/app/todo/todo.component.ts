@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { UpdateComponent } from '../update/update.component';
 //import { NavController } from 'ionic-angular';
-import { AlertController } from 'ionic-angular';
+//import { AlertController } from 'ionic-angular';
+import { EditComponent } from '../edit/edit.component';
 
 @Component({
   selector: 'app-todo',
@@ -10,7 +11,10 @@ import { AlertController } from 'ionic-angular';
 })
 export class TodoComponent implements OnInit {
 
-  constructor(private alertCtrl: AlertController) { }
+  edit = EditComponent;
+
+  constructor(){}
+  //(private alertCtrl: AlertController) { }
  // constructor(public navCtrl: NavController) {}
 
   contentValue: string="";
@@ -50,6 +54,10 @@ deleteTask(index) {
   updateTask(index){
     //this.updatelist =
     this.arrayList = this.updatelist;
+  }
+
+  edit1(){
+    this.edit.edit();
   }
 
   todoArr = [

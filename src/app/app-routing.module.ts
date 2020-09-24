@@ -4,6 +4,7 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { ResetpasswordComponent } from './resetpassword/resetpassword.component';
 import { TodoComponent } from './todo/todo.component';
+import { EditComponent } from './edit/edit.component';
 
 const routes: Routes = [
   { path: 'tabs', loadChildren: './tabs/tabs.module#TabsPageModule' },
@@ -11,7 +12,8 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent},
   { path: 'register', component: RegisterComponent},
   { path: 'resetpassword', component: ResetpasswordComponent},
-  { path: 'todo', component: TodoComponent}
+  { path: 'todo', component: TodoComponent},
+  { path: 'edit', component: EditComponent}
 ];
 @NgModule({
   imports: [

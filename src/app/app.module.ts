@@ -11,12 +11,14 @@ import { RegisterComponent } from './register/register.component';
 import { ResetpasswordComponent } from './resetpassword/resetpassword.component';
 import { TodoComponent } from './todo/todo.component';
 import { UpdateComponent } from './update/update.component';
+import { FormsModule } from '@angular/forms';
+import { EditComponent } from './edit/edit.component';
 
 
 @NgModule({
-  declarations: [AppComponent, LoginComponent, RegisterComponent, ResetpasswordComponent, TodoComponent, UpdateComponent ],
+  declarations: [AppComponent, LoginComponent, RegisterComponent, ResetpasswordComponent, TodoComponent, UpdateComponent, EditComponent ],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, FormsModule],
   providers: [
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
